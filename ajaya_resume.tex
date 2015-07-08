@@ -1,0 +1,233 @@
+% resume.tex
+%
+%
+%
+
+%%%%%%%%%%%%
+% Basic setup
+\documentclass[11pt]{article}
+\usepackage{fullpage}
+\usepackage{setspace}
+\pagestyle{empty}
+\setlength{\tabcolsep}{0in}
+\hyphenchar\font=-1
+\usepackage{geometry} 
+\geometry{legalpaper, twoside} 
+\setstretch{1}
+\usepackage{booktabs}
+\usepackage{topcapt}
+%\raggedbottom
+%\raggedright
+\usepackage{tabulary}
+\usepackage{hyphenat}
+%%%%%%%%%%%%
+
+%%%%%%%%%%%%
+% PDF setup
+\usepackage{ifpdf}
+\ifpdf
+  \usepackage[pdftex]{hyperref}
+\else
+  \usepackage[hypertex]{hyperref}
+\fi
+\hypersetup{
+    letterpaper,
+    colorlinks,
+    urlcolor=black,
+    pdfpagemode=none,
+    pdftitle={Resume},
+    pdfauthor={Ajaya Agrawal},
+    pdfsubject={Resume},
+    pdfkeywords={python, go-lang, linux, openstack, cloud computing, virtualization, distributed systems, highly reliable systems, operating systems}
+}
+%%%%%%%%%%%%
+
+%%%%%%%%%%%%
+% Margin setup
+\oddsidemargin  -0.5in
+\evensidemargin -0.5in
+\textwidth      7.2in
+\headheight     -0.7in
+\topmargin      0.0in
+\textheight=13.0in
+%\footheight 1.0in 
+%%%%%%%%%%%%
+
+\begin{document}
+
+%% Heading
+\begin{center}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lcr}
+&{\textbf{\sc{Ajaya K. Agrawal}}}&\\
+ajku.agr@gmail.com &  & Mobile: +91-88617-44489\\
+ajayaa.github.io &  & https://github.com/ajayaa\\
+\hline\hline
+\end{tabular*}
+\end{center}
+
+%% Experience Section
+
+% Reliance 
+\noindent 
+\\
+%\\
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+\textbf{Reliance Jio Infocomm} & Bangalore, India \\
+\emph{Cloud Engineer} & \emph{April 2014 to Present}
+\end{tabular*}
+{\small
+
+\noindent
+\begin{list}{$\bullet$}{
+%\setlength{\itemsep}{ -5pt}
+%\setlength{\partopsep}{ -18pt}
+}
+\item Involved in evaluating, contributing and modifying Openstack components to meet Jio's needs.
+\item \href{http://stackalytics.com/?release=all&user_id=ajayaa}{\textbf{Upstream contribution}}
+\begin{list}{$\bullet$}{
+%\setlength{\itemsep}{ -5pt}
+%\setlength{\partopsep}{ -18pt}
+}
+\item Implemented caching layer in identity, assignment components of Keystone.
+\item Implemented role base access control in MagnetoDB.
+\item Integrated Ceilometer with MagnetoDB for metering purpose.
+\item Bug fixes in Keystone, MagnetoDB. Few in Tempest, Glance etc.
+\item Code reviews in Glance, MagnetoDB, Keystone.
+\end{list}
+\item {\textbf{Contributions which are not in upstream}}
+\begin{list}{$\bullet$}{
+%\setlength{\itemsep}{ -5pt}
+%\setlength{\partopsep}{ -18pt}
+}
+\item A POC which involved replacing MySql with a distributed database(e.g. MagnetoDB, Cassandra) as a backend for Keystone. The aim of this project was to eliminate single point of failure and lack of scaling out option with MySql. It also offered cross region replication which is beneficial in running multi-region cloud deployment. There is a spec under review for this. 
+\item Configuring and managing Keystone service as a part of Identity management team. That involves defining apis, setting RBAC policies and having tenant isolation among different tenants. 
+\item Tempest tests to test Keystone apis since the Keystone tests in Tempest don't work with domain scoped token. 
+\end{list}
+\end{list}
+}
+
+
+% Morgan Stanely
+\noindent
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+\textbf{Morgan Stanely Advantage Services} & Mumbai \\
+\emph{Analyst} & \emph{Sep 2013 to March 2014} \\
+\end{tabular*}
+{\small
+\noindent
+\begin{list}{$\bullet$}{
+%\setlength{\itemsep}{ -5pt}
+%\setlength{\partopsep}{ -18pt}
+}
+\item Developed an application to crunch data from the in-house in-memory database and present it with extjs. 
+\end{list}
+}
+
+% gsoc 
+\noindent
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+\textbf{Google Summer Of Code} & WFH \\
+\emph{Student Developer} & \emph{May 2013 to Aug 2013} \\
+\end{tabular*}
+{\small
+\noindent
+\begin{list}{$\bullet$}{
+%\setlength{\itemsep}{ -5pt}
+%\setlength{\partopsep}{ -18pt}
+}
+\item Improved replication policy in Drizzle database.Implemented a facility to wait for an event on table. That way, slaves subscribe to events on master and get notified of the events happening on the master. Finally changed slave code to use this and do event-based replication instead of polling.
+\end{list}
+}
+
+% Internship
+\noindent
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+\textbf{Internship at Microsoft} & Hyderabad, India \\
+\emph{Student Developer} & \emph{May 2012 to July 2012} \\
+\end{tabular*}
+{\small
+\noindent
+\begin{list}{$\bullet$}{
+%\setlength{\itemsep}{ -5pt}
+%\setlength{\partopsep}{ -18pt}
+}
+\item Developed a tool to generate sql script after grouping and efficient encoding columns of an excel sheet.
+\end{list}
+}
+
+
+% Other projects
+\noindent
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+\textbf{Other Projects} \\
+\end{tabular*}
+{\small
+\noindent
+\begin{list}{$\bullet$}{
+%\setlength{\itemsep}{ -5pt}
+%\setlength{\partopsep}{ -18pt}
+}
+\item \textbf{Page rank algorithm: } Implemented scalable version of page rank algorithm with input as webgraph from Google programming contest 2002.
+\item \textbf{Membership protocol: } Implemented the gossip membership protocol which updates membership list at each node when new nodes join or nodes leave.
+\item \textbf{Mini distributed database: } Built upon the membership protocol project and wrote a in memory database of Cassandra style with consistent hashing.
+\item \textbf{Movie recommender system: } Implemented a movie recommender system using algorithms like k-means, collaborative filtering, k-nearest neighbours on a dataset collected from facebook friends.
+\end{list}
+}
+
+\noindent
+\textbf{Programming Languages: } Python, C++, Go-lang.
+\\
+%% Education and Training
+\noindent
+\\
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}}
+\large {\sc {Education \& Training}}\\
+\hline
+\end{tabular*}
+
+%IIT Hyderabad
+\noindent 
+\\
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+\textbf{Indian Institute of Technology Hyderabad} & \emph{August 2009 to May 2013} \\
+\emph{Bachelor in Computer Science and Engineering with cgpa of 8.3}
+\end{tabular*}
+
+%MMDS
+\noindent
+\\  
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+\textbf{Mining Massive Datasets} -- \emph{Coursera}  -- \emph{grade : 94.9\%} & \emph{Feb 2015 to March 2015} \\
+\end{tabular*}
+
+%CLOUD COMPUTING 1
+\noindent
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+    \textbf{Cloud Computing Concepts} -- \emph{Coursera}  -- \emph{grade : 89\%} & \emph{Feb 2015 to March 2015} \\
+\end{tabular*}
+
+%CLOUD COMPUTING 2
+\noindent 
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+    \textbf{Cloud Computing Concepts: Part 2} -- \emph{Coursera} -- \emph{grade : 99\%} & \emph{March 2015 to April 2015}
+\end{tabular*}
+
+%% Misc
+\noindent
+\\
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}}
+\large {\sc {Achievements and misc}}\\
+\hline
+\end{tabular*}
+\begin{list}{$\bullet$}{
+%\setlength{\itemsep}{ -5pt}
+%\setlength{\partopsep}{ -18pt}
+}
+\item Secured a rank of 2035 in IIT- JEE 2009 and 1008 in AIEEE.
+\item Scholarship by IITH and sponsorship for Industrial visit by JICA for good academic performance. 
+\item Talks in Openstack meetups.
+\item Ping pong and carrom master.
+\end{list}
+
+
+\end{document}
