@@ -1,0 +1,97 @@
+			 Ajaya Kumar Agrawal                                      
+			 BTech(Computer Science) at IIT Hyderabad
+			 CGPA:8.25 (upto 7th semester)                                
+			 Tel: +91-85000-53514
+			 Email: ajayaiith@gmail.com  
+				 
+Summary of Experience
+
+	Contributor 
+	DrizzleDB project
+	March 2012 to present
+
+		As a contributor, I help write, refactor code and solve bug in a
+    	large C++ multi-threaded open-source database.
+
+    Intern
+    Microsoft India
+    May 2012 to July 2012
+
+    	I worked on developing a tool for efficient grouping and encoding
+    	of columns of an excel sheet and store them in database. Extended
+    	this tool to find difference with existing rows in database and 
+    	generate sql script for difference. Language: C#
+
+Projects
+
+	Plug-in For Volcano Optimizer
+	Course Project
+	March 2012 to April 2012 
+
+		Implemented a plan refinement algorithm for a database query  by 
+		avoiding unnecessary sorting and grouping which is inferred based
+		on order properties. Language: C++
+
+	Modules of a small Database( Mubase )
+	Course Project
+	October 2011 to November 2011
+
+		Worked on a team of four to implement certain modules of Mubase. I
+		implemented relationManager class, storage and retrieval of fixed
+		and variable length data and two operator classes, sorting and 
+		projection. Language: C++
+
+	Database queries using files
+	Course Project
+	August 2011 to September 2011
+
+		Implemented simple database queries like select, project, cross 
+		product, intersection and  union with simple predicates. Relations
+		were stored in text files.Parsed a  small subset of SQL language
+		and built an operator tree using Yacc. Language: C++
+	
+	Performance study and enhancement of MPTCP
+	Mini Project
+	September 2012 to November 2012 
+
+		Involved enabling systems with multiple network interfaces to create
+		multiple TCP connections to the same server via different interfaces
+		Identified bottlenecks in MPTCP by doing simulation in ns3.
+
+
+Programming Languages
+
+	C, C++, SQL*, Python*, Java*      *marked basic knowledge
+
+Courses Taken
+
+	Courses in Math
+
+    	Probability and Statistics, Differential Equations 
+
+ 	Core Courses:
+
+		Operating System, Advanced Topics In Data Management, Computer Networks,
+		Database Systems,  Analysis Of Algorithms, Data Structures and Algorithms
+		, Theory of Computation, Foundations of Computer Science, C programming 
+		language.
+
+	Lab Courses 
+
+		OS Lab, Networks Lab, Database Lab, Data Structures and Algorithms lab,
+		C++ programming lab.
+ 									
+Awards and Achievements
+
+	Secured a rank of 2035 in IIT- JEE 2009 and 1008 in AIEEE .
+
+	Received free studentship scholarship by IITH for good academic performance
+	in year 2010-11 and 2011-2012.
+
+	Was a part of JENESYS program (Industrial tour to Japan) in the year 2010
+	from IIT Hyderabad.
+
+Extra-Curricular   
+
+	Represented IITH in TT in Inter-IIT sports meet.
+	Was a member of IITH drama club.
