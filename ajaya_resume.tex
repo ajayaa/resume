@@ -59,8 +59,8 @@
 \begin{center}
 \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lcr}
 &{\textbf{\sc{Ajaya K. Agrawal}}}&\\
-ajayaa.github.io &  & ajku.agr@gmail.com\\
-https://github.com/ajayaa &  & Mobile: +91-88617-44489\\
+\href{https://ajayaa.github.io}{ajayaa.github.io} &  & \href{mailto:ajku.agr@gmail.com}{ajku.agr@gmail.com}\\
+\href{https://github.com/ajayaa}{https://github.com/ajayaa} &  & Mobile: +91-91489-07012\\
 \hline\hline
 \end{tabular*}
 \end{center}
@@ -73,7 +73,7 @@ https://github.com/ajayaa &  & Mobile: +91-88617-44489\\
 %\\
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
 \textbf{Reliance Jio Infocomm} & Bangalore, India \\
-\emph{Cloud Engineer} & \emph{April 2014 to Present}
+\emph{Cloud Engineer} & \emph{April 2014 to January 2016}
 \end{tabular*}
 {\small
 
@@ -82,7 +82,8 @@ https://github.com/ajayaa &  & Mobile: +91-88617-44489\\
 %\setlength{\itemsep}{ -5pt}
 %\setlength{\partopsep}{ -18pt}
 }
-\item Contributed to the design and implementation of an IaaS platform based on OpenStack for Reliance Jio.
+\item Contributed to the design, implementation, deployment and upgrade of an IaaS platform based on OpenStack for Reliance Jio. Primarily I worked in a service called Keystone which is responsible for authentication, authorization and providing an abstraction of tenant in a cloud environment.
+
 \item \href{http://stackalytics.com/?release=all&user_id=ajayaa}{\textbf{Upstream contribution}}
 \begin{list}{$\bullet$}{
 %\setlength{\itemsep}{ -5pt}
@@ -99,9 +100,14 @@ https://github.com/ajayaa &  & Mobile: +91-88617-44489\\
 %\setlength{\itemsep}{ -5pt}
 %\setlength{\partopsep}{ -18pt}
 }
-\item A POC which involved replacing MySql with a distributed database (MagnetoDB, Cassandra) as a backend for Keystone. The aim of this project was to eliminate single point of failure and lack of scaling out option with MySql. It also offered cross region replication which is beneficial in running multi-region cloud deployment. There is a spec under review for this. 
-\item Configuring and managing Keystone service as a part of Identity management team. That involves defining apis, setting RBAC policies and having tenant isolation among different tenants. 
-\item Wrote functional tests to test Keystone apis to work with customized policy file.
+\item  Revamped the authorization model in Openstack which is static role based and replaced it with Amazon style authorization which is more flexible and based on user defined policy. Led a team of three in designing, implementing and deploying this feature.
+
+\item Implemented a POC which involved replacing MySQL with a distributed database (MagnetoDB, Cassandra) as a backend for Keystone. The aim of this project was to eliminate single point of failure and lack of scaling out option with MySQL. It also offered cross region replication which is beneficial in running multi-region cloud deployment. Implemeted the first iteration of driver in Python with MagnetoDB as backend which provides a DynamoDB like api on top of Cassandra. Helped team members in writing the Cassandra driver and in performance bechmarking.
+
+\item Configuring and managing Keystone service as a part of Identity management team. That involved defining apis, setting RBAC policies and making sure other services in Openstack are properly integrated with Keystone.
+
+\item Wrote and maintained complete suite of functional tests to test Keystone apis in staging and production environment.
+
 \end{list}
 \end{list}
 }
@@ -155,6 +161,24 @@ https://github.com/ajayaa &  & Mobile: +91-88617-44489\\
 \end{list}
 }
 
+%Other Open Source Contribution
+\noindent
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+\textbf{CockroachDB} & Remote\\
+\emph{Contributor} & \emph{Nov 2015 to Current} \\
+\end{tabular*}
+{\small
+\noindent
+\begin{list}{$\bullet$}{
+%\setlength{\itemsep}{ -5pt}
+%\setlength{\partopsep}{ -18pt}
+}
+\item Implemented a feature in KV CLI to fetch a range of keys from the DB server.
+\item Implemented a feature to determine the cache size of RocksDB based on size of available memory irrespective of the type of host.
+\end{list}
+}
+
+
 
 % Other projects
 \noindent
@@ -182,8 +206,8 @@ https://github.com/ajayaa &  & Mobile: +91-88617-44489\\
 \large {\sc {Technical skills}}\\
 \hline
 \\
-Python, C++, Go-lang, MySQL, Cassandra, DynamoDB, Linux, Shell scripting, Puppet, Vagrant, LXC\\
-Docker, SDN Fundamentals, Rest API, Distributed systems.
+Python, Go-lang, C++, MySQL, Cassandra, DynamoDB, Puppet, Vagrant, LXC, Docker, SDN fundamentals\\
+Rest API, Distributed systems, Linux, Shell scripting, Vim , Git
 \end{tabular*}
 \\
 
@@ -211,16 +235,29 @@ Docker, SDN Fundamentals, Rest API, Distributed systems.
 \end{tabular*}
 
 %CLOUD COMPUTING I and II
+%\noindent
+%\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%    \textbf{Cloud Computing Concepts I \& II} -- \emph{Coursera}  -- \emph{grade : 89\%, 99\%} & \emph{Feb 2015 to March 2015} \\
+%\end{tabular*}
+
+%CLOUD COMPUTING I
 \noindent
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-    \textbf{Cloud Computing Concepts I \& II} -- \emph{Coursera}  -- \emph{grade : 89\%, 99\%} & \emph{Feb 2015 to March 2015} \\
+    \textbf{Cloud Computing Concepts I } -- \emph{Coursera}  -- \emph{grade : 89\%} & \emph{Feb 2015 to March 2015} \\
 \end{tabular*}
 
-%CLOUD COMPUTING 2
-%\noindent 
-%\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-%    \textbf{Cloud Computing Concepts: Part 2} -- \emph{Coursera} -- \emph{grade : 99\%} & \emph{March 2015 to April 2015}
-%\end{tabular*}
+%CLOUD COMPUTING II
+\noindent 
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+    \textbf{Cloud Computing Concepts II } -- \emph{Coursera} -- \emph{grade : 99\%} & \emph{March 2015 to April 2015}
+\end{tabular*}
+
+%CLOUD NETWORKING 
+\noindent
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+    \textbf{Cloud Networking} -- \emph{Coursera}  -- \emph{grade : 98\%} & \emph{Nov 2015 to Dec 2015} \\
+\end{tabular*}
+
 
 %% Misc
 \noindent
@@ -234,7 +271,7 @@ Docker, SDN Fundamentals, Rest API, Distributed systems.
 %\setlength{\partopsep}{ -18pt}
 }
 \item Secured a rank of 2035 in IIT- JEE 2009 and 1008 in AIEEE.
-\item Scholarship by IITH and sponsorship for Industrial visit by JICA for good academic performance. 
+\item Scholarship by IITH and sponsorship for Industrial visit by JICA for good academic performance.
 \item Talks in Openstack meetups.
 \item Ping pong and carrom master.
 \end{list}
