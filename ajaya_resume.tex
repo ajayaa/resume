@@ -84,29 +84,29 @@
 }
 \item Contributed to the design, implementation, deployment and upgrade of an IaaS platform based on OpenStack for Reliance Jio. Primarily I worked in a service called Keystone which is responsible for authentication, authorization and providing an abstraction of tenant in a cloud environment.
 
-\item \href{http://stackalytics.com/?release=all&user_id=ajayaa}{\textbf{Upstream contribution}}
+\item \href{http://stackalytics.com/?release=all&user_id=ajayaa}{\textbf{Open source contributions}}
 \begin{list}{$\bullet$}{
 %\setlength{\itemsep}{ -5pt}
 %\setlength{\partopsep}{ -18pt}
 }
 \item Implemented caching layer in identity, assignment components of Keystone and thus reduced calls to database.
-\item Implemented role based access control in MagnetoDB.
+\item Implemented role based access control in MagnetoDB (DynamoDB API on top of Cassandra).
 \item Integrated Ceilometer with MagnetoDB for metering.
 \item Bug fixes in Keystone, MagnetoDB, Tempest, Glance etc.
 \item Code reviews in Glance, MagnetoDB, Keystone.
 \end{list}
-\item {\textbf{Contributions which are not in upstream}}
+\item {\textbf{Contributions which are not open sourced}}
 \begin{list}{$\bullet$}{
 %\setlength{\itemsep}{ -5pt}
 %\setlength{\partopsep}{ -18pt}
 }
-\item  Revamped the authorization model in Openstack which is static role based and replaced it with Amazon style authorization which is more flexible and based on user defined policy. Worked in a team of three in designing, implementing and deploying this feature.
+\item  Revamped the authorization model in OpenStack which is static role based and replaced it with Amazon style authorization which is more flexible and based on user defined policy. Worked in a team of three in designing, implementing and deploying this feature.
 
-\item Implemented a POC which involved replacing MySQL with a distributed database (MagnetoDB, Cassandra) as a backend for Keystone. The aim of this project was to eliminate single point of failure and lack of scaling out option with MySQL. It also offered cross region replication which is beneficial in running multi-region cloud deployment. Implemeted the first iteration of driver in Python with MagnetoDB as backend which provides a DynamoDB like api on top of Cassandra. Helped team members in writing the Cassandra driver and in performance bechmarking.
+\item Implemented a proof of concept which involved replacing MySQL with a distributed database (MagnetoDB, Cassandra) as a backend for Keystone. The aim of this project was to eliminate single point of failure and lack of scaling out option with MySQL. It also offered cross region replication which is beneficial in running multi-region cloud deployment. Implemeted the first iteration of driver in Python with MagnetoDB as backend which provides a DynamoDB like API on top of Cassandra. Helped team members in writing the Cassandra driver and in performance bechmarking.
 
-\item Configuring and managing Keystone service as a part of Identity management team. That involved defining apis, setting RBAC policies and making sure other services in Openstack are properly integrated with Keystone.
+\item Configuring and managing Keystone service as a part of Identity management team. That involved defining APIs, setting RBAC policies and making sure other services in OpenStack are properly integrated with Keystone.
 
-\item Wrote and maintained complete suite of functional tests to test Keystone apis in staging and production environment.
+\item Wrote and maintained complete suite of functional tests to test Keystone APIs in staging and production environment.
 
 \end{list}
 \end{list}
@@ -157,7 +157,7 @@
 %\setlength{\itemsep}{ -5pt}
 %\setlength{\partopsep}{ -18pt}
 }
-\item Developed a tool to generate sql script after grouping and efficient encoding columns of an excel sheet. This tool eliminated the need of managing large excel sheets manually and reduced the number of rows by a factor of ten.
+\item Developed a tool to generate SQL script after grouping and efficient encoding columns of an Excel sheet. This tool eliminated the need of managing large Excel sheets manually and reduced the number of rows by a factor of ten.
 \end{list}
 }
 
@@ -173,7 +173,7 @@
 %\setlength{\itemsep}{ -5pt}
 %\setlength{\partopsep}{ -18pt}
 }
-\item Implemented a feature in KV CLI to fetch a range of keys from the DB server.
+\item Implemented a feature in key-value CLI to fetch a range of keys from the DB server.
 \item Implemented a feature to determine the cache size of RocksDB based on size of available memory irrespective of the type of host.
 \end{list}
 }
@@ -182,7 +182,7 @@
 
 \noindent
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-\textbf{SmsRide} & Uber hackathon, India\\
+\textbf{SMSRide} & Uber hackathon, India\\
 \emph{Hacker} & \emph{Jan 2016} \\
 \end{tabular*}
 {\small
@@ -191,7 +191,7 @@
 %\setlength{\itemsep}{ -5pt}
 %\setlength{\partopsep}{ -18pt}
 }
-\item Built an android app to book a Uber by sending an sms. This app is useful in scenarios in which a user doesn't have internet connection. I wrote the server side code which processes SMS sent by user, makes Uber api calls and then sends back an SMS to the user on successful booking. The code was written in Python and hosted in AWS lambda service.
+\item Built an Android app to book an Uber by sending an SMS. This app is useful in scenarios in which a user doesn't have internet connection. I wrote the server side code which processes SMS sent by user, makes Uber API calls and then sends back an SMS to the user on successful booking. The code was written in Python and hosted on AWS Lambda service.
 \end{list}
 }
 
@@ -211,7 +211,7 @@
 \item \textbf{Page rank algorithm: } Implemented scalable version of page rank algorithm with input as webgraph from Google programming contest.
 \item \textbf{Membership protocol: } Implemented the gossip membership protocol which updates membership list at each node when new nodes join or nodes leave.
 \item \textbf{Mini distributed database: } Built upon the membership protocol project and wrote an in memory database where keys were distributed among nodes using consistent hashing.
-\item \textbf{Mini relational database: } Parsed a small subset of sql language and implemented simple database queries on tables stored in text files.
+\item \textbf{Mini relational database: } Parsed a small subset of SQL language and implemented simple database queries on tables stored in text files.
 \item \textbf{Movie recommender system: } Implemented a movie recommender system using algorithms like k-means, collaborative filtering, k-nearest neighbours on a dataset collected from facebook friends.
 \end{list}
 }
@@ -241,7 +241,7 @@ Rest API, Distributed systems, Linux, Shell scripting, Vim , Git
 \\
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
 \textbf{Indian Institute of Technology Hyderabad} & \emph{August 2009 to May 2013} \\
-\emph{Bachelor in Computer Science and Engineering with cgpa of 8.3}
+\emph{Bachelor in Computer Science and Engineering with CGPA of 8.3}
 \end{tabular*}
 
 %MMDS
@@ -287,10 +287,11 @@ Rest API, Distributed systems, Linux, Shell scripting, Vim , Git
 %\setlength{\itemsep}{ -5pt}
 %\setlength{\partopsep}{ -18pt}
 }
-\item Won Uber's first Asia hackathon with SmsRide.
-\item Secured a rank of 2035 in IIT- JEE 2009 and 1008 in AIEEE.
+\item Won Uber's first Asia hackathon by building SMSRide.
+\item Talks and tutorials in OpenStack meetups.
+\item Secured all India rank 2035 in IIT-JEE 2009 and 1008 in AIEEE.
+\item Selected in top 1\% of Astronomy Olympiad India.
 \item Scholarship by IITH and sponsorship for Industrial visit by JICA for good academic performance.
-\item Talks in Openstack meetups.
 \item Ping pong and carrom master.
 \end{list}
 
